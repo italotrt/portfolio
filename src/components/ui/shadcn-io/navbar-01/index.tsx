@@ -99,11 +99,8 @@ export const Navbar01 = React.forwardRef<HTMLElement, Navbar01Props>(
       logo = <p />,
       logoHref = '#',
       navigationLinks = defaultNavigationLinks,
-      signInText = 'Sign In',
-      signInHref = '#signin',
       ctaText = 'Get Started',
       ctaHref = '#get-started',
-      onSignInClick,
       onCtaClick,
       ...props
     },
@@ -235,26 +232,6 @@ export const Navbar01 = React.forwardRef<HTMLElement, Navbar01Props>(
           </div>
           {/* Right side */}
           <div className="flex items-center gap-3">
-            <Button
-              variant="ghost"
-              size="sm"
-              className="text-sm font-medium hover:bg-accent hover:text-accent-foreground"
-              onClick={(e) => {
-                e.preventDefault();
-                if (onSignInClick) {
-                  onSignInClick();
-                } else if (signInHref?.startsWith('#')) {
-                  const element = document.getElementById(signInHref.slice(1));
-                  if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' });
-                  }
-                } else if (signInHref) {
-                  window.open(signInHref, '_blank');
-                }
-              }}
-            >
-              {signInText}
-            </Button>
             <Button
               size="sm"
               className="text-sm font-medium px-4 h-9 rounded-md shadow-sm"
