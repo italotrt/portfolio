@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Italo's Portfolio",
+  title: "Italo da Silva",
   description: "The portfolio website of Italo da Silva, a software engineer and tech enthusiast.",
 };
 
