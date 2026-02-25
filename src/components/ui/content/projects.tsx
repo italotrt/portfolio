@@ -7,39 +7,49 @@ import {
     CardTitle,
 } from "@/components/ui/card";
 import projectsData from "@/data/projectsData.json";
-import { CardActionArea } from "@mui/material";
-
-function displayProjectLinks(links: { href: string; label: string }[]) {
-  return (
-    <>
-      <a href={links[0].href} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">{links[0].label}</a>
-      {links[1] && (
-        <>
-          {" • "}
-          <a href={links[1].href} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">{links[1].label}</a>
-        </>
-      )}
-    </>
-  );
-}
 
 export function Projects() {
+  const accentColors = [
+    { border: "border-t-blue-500",   shadow: "hover:shadow-blue-900/30",   text: "text-blue-400"   },
+    { border: "border-t-purple-500", shadow: "hover:shadow-purple-900/30", text: "text-purple-400" },
+    { border: "border-t-emerald-500",shadow: "hover:shadow-emerald-900/30",text: "text-emerald-400"},
+    { border: "border-t-orange-500", shadow: "hover:shadow-orange-900/30", text: "text-orange-400" },
+    { border: "border-t-pink-500",   shadow: "hover:shadow-pink-900/30",   text: "text-pink-400"   },
+    { border: "border-t-cyan-500",   shadow: "hover:shadow-cyan-900/30",   text: "text-cyan-400"   },
+  ];
+
+  const displayProjectLinks = (links: { href: string; label: string }[]) => {
+    return (
+      <>
+        <a href={links[0].href} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">{links[0].label}</a>
+        {links[1] && (
+          <>
+            {" • "}
+            <a href={links[1].href} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">{links[1].label}</a>
+          </>
+        )}
+      </>
+    );
+  }
+
   return (
     <div className="container mx-auto px-4 py-16">
-        <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-              My Projects
-            </h2>
-            <div className="flex flex-col gap-8">
-              {projectsData.map((project, index) => (
-                <Card key={index} className="bg-gray-800 rounded-xl p-6 border-gray-700">
+      <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+            My Projects
+          </h2>
+          <div className="flex flex-col gap-8">
+            {projectsData.map((project, index) => {
+              const color = accentColors[index % accentColors.length];
+              return (
+                <Card key={index} className={`bg-gray-800 rounded-xl p-6 border-gray-700 border-t-2 ${color.border}`}>
                   <CardHeader className="flex flex-col md:flex-row md:items-center md:justify-between">
                     <div>
-                      <CardTitle className="text-xl font-bold text-white">
+                      <CardTitle className="font-bold text-white">
                         {project.title}
                       </CardTitle>
-                      <CardDescription className="text-gray-300 md:text-lg">
-                        {project.description}
+                      <CardDescription className="text-gray-300">
+                        {project.subtitle}
                       </CardDescription>
                     </div>
 
@@ -66,12 +76,13 @@ export function Projects() {
                     </div>
                   </CardFooter>
                 </Card>
-              ))}
-              <p className="text-gray-400 text-center">
-                More projects on my <a href="https://github.com/italotrt" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">GitHub</a>.
-              </p>
-            </div>
+              );
+            })}
+            <p className="text-gray-400 text-center">
+              More projects on my <a href="https://github.com/italotrt" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">GitHub</a>.
+            </p>
           </div>
-        </div>
+      </div>
+    </div>
   );
 }

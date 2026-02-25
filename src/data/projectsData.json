@@ -1,7 +1,37 @@
 [
   {
+    "title": "Hacker News Reimagined",
+    "subtitle": "Side Project",
+    "content": "Description for Hacker News Reimagined project.",
+    "links": [
+      {
+        "label": "Project Code",
+        "href": "https://github.com/italotrt/news-activities-for-hackers"
+      },
+      {
+        "label": "Deployed Link",
+        "href": "https://italotrt.github.io/news-activities-for-hackers/"
+      }
+    ],
+    "bodyType": "list",
+    "bullets": [
+      "I have redesigned the Hacker News front page as a modern web application, allowing users to browse top and new stories with pagination.",
+      "I have built with React, TypeScript and Vite, using TanStack Query to handle all API calls to the Hacker News API with caching and background refetching.",
+      "The project has an automated deployment to GitHub Pages via GitHub Actions, triggering on every push to main."
+    ],
+    "tags": [
+      { "label": "React", "colorClass": "bg-blue-100 text-blue-800" },
+      { "label": "TypeScript", "colorClass": "bg-green-100 text-green-800" },
+      { "label": "Vite", "colorClass": "bg-orange-100 text-orange-800" },
+      { "label": "Jest", "colorClass": "bg-purple-100 text-purple-800" },
+      { "label": "TanStack Query", "colorClass": "bg-yellow-100 text-yellow-800" }
+    ]
+  },
+
+  {
     "title": "Skill-Swap - Admin Panel",
-    "description": "Software Design & Architecture (University Project)",
+    "subtitle": "Software Design & Architecture (University Project)",
+    "content": "Description for Skill-Swap Admin Panel project.",
     "links": [
       {
         "label": "Project Code",
@@ -15,7 +45,8 @@
     "bodyType": "list",
     "bullets": [
       "In this project I have designed and implemented a N-Tier Architecture containing the presentation, business and data layers for Admin Panel of my group’s application, where I ensured maintainability, separation of concerns and scalability.",
-      "Built reusable components, debugged across services using Go and Ruby on Rails, and leveraged tools like Docker, Heroku, Postman, and Git to streamline development and deployment."
+      "I configured SonarQube for code quality analysis and test coverage tracking, which helped to identify and fix bugs, improving the overall code quality.",
+      "I have Created UML diagrams (Component, Deployment, Sequence) to document and justify architectural decisions around scalability, data security, and interoperability."
     ],
     "tags": [
       { "label": "React", "colorClass": "bg-blue-100 text-blue-800" },
@@ -26,7 +57,8 @@
 
   {
     "title": "Testing Library Management System",
-    "description": "Software Inspection and Testing Project (University Project)",
+    "subtitle": "Software Inspection and Testing Project (University Project)",
+    "content": "Description for Testing Library Management System project.",
     "links": [
       {
         "label": "Project Code",
@@ -44,15 +76,14 @@
       { "label": "Java", "colorClass": "bg-blue-100 text-blue-800" },
       { "label": "JUnit", "colorClass": "bg-green-100 text-green-800" },
       { "label": "Test-Driven Development", "colorClass": "bg-orange-100 text-orange-800" },
-      { "label": "Bug Reporting using Jira", "colorClass": "bg-red-100 text-red-800" },
-      { "label": "Tag 5", "colorClass": "bg-purple-100 text-purple-800" },
-      { "label": "Tag 6", "colorClass": "bg-yellow-100 text-yellow-800" }
+      { "label": "Bug Reporting using Jira", "colorClass": "bg-red-100 text-red-800" }
     ]
   },
 
   {
     "title": "Rogue Adventures",
-    "description": "Extracurricular Online Course Project - Techers, Brazil",
+    "subtitle": "Extracurricular Online Course Project - Techers, Brazil",
+    "content": "Description for Rogue Adventures project.",
     "links": [
       {
         "label": "Project Code",
