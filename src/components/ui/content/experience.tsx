@@ -22,7 +22,7 @@ export function Experience() {
                     Software Engineer Intern
                 </CardTitle>
                 <CardDescription className="flex flex-col md:flex-row md:items-center gap-2 text-gray-600">
-                    <span className="font-semibold text-blue-600">WP Engine</span>
+                    <span className="font-semibold text-indigo-600">WP Engine</span>
                     <span className="hidden md:inline">•</span>
                     <span>Jan 2024 - Aug 2024</span>
                     <span className="hidden md:inline">•</span>
@@ -33,33 +33,40 @@ export function Experience() {
                 <span className="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
                     8 months
                 </span>
-                <Image
-                    src="/wp-engine-logo.png"
-                    alt="WP Engine Logo"
-                    width={100}
-                    height={40}
-                    className="inline-block ml-4"
-                />
+
+                <a href="https://www.wpengine.com/" target="_blank" rel="noopener noreferrer">
+                    <Image
+                        src="/wp-engine-logo.png"
+                        alt="WP Engine Logo"
+                        width={100}
+                        height={40}
+                        className="inline-block ml-4"
+                    />
+                </a>
                 </div>
             </CardHeader>
             
             <CardContent className="space-y-2 text-gray-700">
                 <ul className="space-y-2 list-disc list-inside leading-relaxed">
-                <li>
-                    Contributed as a <span className="font-semibold text-gray-900">Full Stack Engineer</span> on the e-commerce team, focusing on frontend development with <span className="font-semibold text-blue-600">React</span> and <span className="font-semibold text-blue-600">TypeScript</span>.
-                </li>
+                    <li>
+                        Engineered high-performance UI features and accessibility enhancements as a <span className="font-semibold text-indigo-600">Full-Stack Intern</span>, utilizing <span className="font-semibold text-blue-600">React</span> and <span className="font-semibold text-cyan-600">TypeScript</span> to elevate the user experience for customer-facing e-commerce systems.
+                    </li>
 
-                <li>
-                    Collaborated in a 6-person <span className="font-semibold text-purple-600">Agile team</span>, participating in daily stand-ups, sprint planning, and code reviews.
-                </li>
+                    <li>
+                        Facilitated cross-functional collaboration between Product Managers and UI/UX Designers to ensure technical deliverables directly supported strategic business objectives.
+                    </li>
 
-                <li>
-                    Delivered production-ready features and UI improvements that enhanced <span className="font-semibold text-green-600">performance and accessibility</span> across customer-facing systems.
-                </li>
+                    <li>
+                        Developed and optimized full-stack features using <span className="font-semibold text-orange-600">Golang</span> and <span className="font-semibold text-rose-600">Ruby on Rails</span>, maintaining high code quality through rigorous peer reviews and the creation of reusable components.
+                    </li>
 
-                <li>
-                    Built reusable components, debugged across services using Go and Ruby on Rails, and leveraged tools like Docker, Heroku, Postman, and Git to streamline development and deployment.
-                </li>
+                    <li>
+                        Streamlined DevOps workflows by leveraging <span className="font-semibold text-sky-600">Docker</span>, <span className="font-semibold text-violet-600">Heroku</span>, and <span className="font-semibold text-amber-600">Postman</span>, ensuring efficient deployment and testing across distributed services.
+                    </li>
+
+                    <li>
+                        Fast paced delivery in an <span className="font-semibold text-emerald-600">Agile/Scrum</span> environment, actively contributing to sprint planning, daily stand-ups, and retrospectives to improve team performance.
+                    </li>
                 </ul>
             </CardContent>
             

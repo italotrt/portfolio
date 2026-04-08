@@ -234,7 +234,7 @@ export const Navbar01 = React.forwardRef<HTMLElement, Navbar01Props>(
           <div className="flex items-center gap-3">
             <Button
               size="sm"
-              className="text-sm font-medium px-4 h-9 rounded-md shadow-sm"
+              className="text-sm font-medium px-4 h-9 rounded-md shadow-sm hover:cursor-pointer"
               onClick={(e) => {
                 e.preventDefault();
                 if (onCtaClick) {

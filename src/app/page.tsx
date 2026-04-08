@@ -97,10 +97,10 @@ export default function Home() {
               I'd love to hear from you.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="px-8 py-3 border-2 border-black rounded-lg hover:bg-white hover:text-black transition-colors" onClick={() => window.open('https://www.linkedin.com/in/italo-da-silva/', '_blank')}>
+              <Button className="px-8 py-3 border-2 border-black rounded-lg hover:bg-white hover:text-black hover:cursor-pointer transition-colors" onClick={() => window.open('https://www.linkedin.com/in/italo-da-silva/', '_blank')}>
                 LinkedIn
               </Button>
-              <Button className="px-8 py-3 border-2 border-black rounded-lg hover:bg-white hover:text-black transition-colors" onClick={() => window.open('https://github.com/italotrt', '_blank')}>
+              <Button className="px-8 py-3 border-2 border-black rounded-lg hover:bg-white hover:text-black hover:cursor-pointer transition-colors" onClick={() => window.open('https://github.com/italotrt', '_blank')}>
                 Github
               </Button>
             </div>

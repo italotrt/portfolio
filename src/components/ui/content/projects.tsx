@@ -9,15 +9,6 @@ import {
 import projectsData from "@/data/projectsData.json";
 
 export function Projects() {
-  const accentColors = [
-    { border: "border-t-blue-500",   shadow: "hover:shadow-blue-900/30",   text: "text-blue-400"   },
-    { border: "border-t-purple-500", shadow: "hover:shadow-purple-900/30", text: "text-purple-400" },
-    { border: "border-t-emerald-500",shadow: "hover:shadow-emerald-900/30",text: "text-emerald-400"},
-    { border: "border-t-orange-500", shadow: "hover:shadow-orange-900/30", text: "text-orange-400" },
-    { border: "border-t-pink-500",   shadow: "hover:shadow-pink-900/30",   text: "text-pink-400"   },
-    { border: "border-t-cyan-500",   shadow: "hover:shadow-cyan-900/30",   text: "text-cyan-400"   },
-  ];
-
   const displayProjectLinks = (links: { href: string; label: string }[]) => {
     return (
       <>
@@ -40,9 +31,8 @@ export function Projects() {
           </h2>
           <div className="flex flex-col gap-8">
             {projectsData.map((project, index) => {
-              const color = accentColors[index % accentColors.length];
               return (
-                <Card key={index} className={`bg-gray-800 rounded-xl p-6 border-gray-700 border-t-2 ${color.border}`}>
+                <Card key={index} className={`bg-gray-800 rounded-xl p-6 border-gray-700 border-t-2`}>
                   <CardHeader className="flex flex-col md:flex-row md:items-center md:justify-between">
                     <div>
                       <CardTitle className="font-bold text-white">
