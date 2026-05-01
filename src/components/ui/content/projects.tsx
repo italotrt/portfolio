@@ -29,11 +29,11 @@ export function Projects() {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
             My Projects
           </h2>
-          <div className="flex flex-col gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {projectsData.map((project, index) => {
               return (
-                <Card key={index} className={`bg-gray-800 rounded-xl p-6 border-gray-700 border-t-2`}>
-                  <CardHeader className="flex flex-col md:flex-row md:items-center md:justify-between">
+                <Card key={index} className={`bg-gray-800 rounded-xl p-6 border-gray-700 border-t-2 flex flex-col`}>
+                  <CardHeader className="flex flex-col md:flex-col">
                     <div>
                       <CardTitle className="font-bold text-white">
                         {project.title}
@@ -56,7 +56,7 @@ export function Projects() {
                     </ul>
                   </CardContent>
 
-                  <CardFooter className="pt-6 border-t border-gray-700">
+                  <CardFooter className="pt-6 border-t border-gray-700 mt-auto">
                     <div className="flex gap-2 flex-wrap">
                       {project.tags.map((tag, idx) => (
                         <span key={idx} className={`${tag.colorClass} px-3 py-1 rounded-full text-sm`}>
@@ -68,10 +68,10 @@ export function Projects() {
                 </Card>
               );
             })}
-            <p className="text-gray-400 text-center">
-              More projects on my <a href="https://github.com/italotrt" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">GitHub</a>.
-            </p>
           </div>
+          <p className="text-gray-400 text-center mt-12">
+            More projects on my <a href="https://github.com/italotrt" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">GitHub</a>.
+          </p>
       </div>
     </div>
   );

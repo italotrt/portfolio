@@ -137,7 +137,7 @@ export const Navbar01 = React.forwardRef<HTMLElement, Navbar01Props>(
       <header
         ref={combinedRef}
         className={cn(
-          'sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 px-4 md:px-6 [&_*]:no-underline',
+          'sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 px-4 md:px-6 [&_*]:no-underline',
           className
         )}
         {...props}
@@ -190,18 +190,24 @@ export const Navbar01 = React.forwardRef<HTMLElement, Navbar01Props>(
             )}
             {/* Main nav */}
             <div className="flex items-center gap-6">
-              <button 
+              <span>
+                Italo da Silva
+              </span>
+              {/* <button 
                 onClick={(e) => e.preventDefault()}
                 className="flex items-center space-x-2 text-primary hover:text-primary/90 transition-colors cursor-pointer"
               >
                 <div className="text-2xl">
                   {logo}
                 </div>
-              </button>
-              {/* Navigation menu */}
-              {!isMobile && (
-                <NavigationMenu className="flex">
-                <NavigationMenuList className="gap-1">
+              </button> */}
+            </div>
+          </div>
+          
+          {/* Center - Navigation menu */}
+          {!isMobile && (
+            <NavigationMenu className="flex flex-1 justify-center">
+            <NavigationMenuList className="gap-1">
                   {navigationLinks.map((link, index) => (
                     <NavigationMenuItem key={index}>
                       <button
@@ -227,9 +233,7 @@ export const Navbar01 = React.forwardRef<HTMLElement, Navbar01Props>(
                   ))}
                 </NavigationMenuList>
                 </NavigationMenu>
-              )}
-            </div>
-          </div>
+          )}
           {/* Right side */}
           <div className="flex items-center gap-3">
             <Button
