@@ -68,7 +68,6 @@
     "bodyType": "list",
     "bullets": [
       "Practiced Test-Driven Development (TDD): Engineered high-reliability software using JUnit, ensuring 100% of new features met strict acceptance criteria prior to integration.",
-      "Authored comprehensive coverage-based test cases, leveraging JaCoCo to monitor and significantly increase code coverage across critical modules.",
       "Leveraged Jira to track bugs and enhancements, mapping them directly to user stories to refine requirements and reduce post-release defects.",
       "Collaborated with a team of four in a GitHub environment, performing peer code reviews and managing branch merges to ensure seamless integration."
     ],
