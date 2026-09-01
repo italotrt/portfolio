@@ -29,7 +29,7 @@ export function Projects() {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
             My Projects
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="flex flex-wrap gap-8">
             {projectsData.map((project, index) => {
               return (
                 <Card key={index} className={`bg-gray-800 rounded-xl p-6 border-gray-700 border-t-2 flex flex-col`}>
@@ -59,7 +59,7 @@ export function Projects() {
                   <CardFooter className="pt-6 border-t border-gray-700 mt-auto">
                     <div className="flex gap-2 flex-wrap">
                       {project.tags.map((tag, idx) => (
-                        <span key={idx} className={`bg-blue-100 text-blue-400 px-3 py-1 rounded-full text-sm`}>
+                        <span key={idx} className={`bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-medium`}>
                           {tag.label}
                         </span>
                       ))}
