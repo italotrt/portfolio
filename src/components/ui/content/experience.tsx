@@ -10,7 +10,7 @@ import {
 
 export function Experience() {
   return (
-    <div className="container mx-auto px-4 py-16 flex flex-col flex-wrap items-center justify-center relative h-[100vh]">
+    <div className="container mx-auto px-4 py-16">
         <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
                 Experience
