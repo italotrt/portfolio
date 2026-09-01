@@ -59,7 +59,7 @@ export function Projects() {
                   <CardFooter className="pt-6 border-t border-gray-700 mt-auto">
                     <div className="flex gap-2 flex-wrap">
                       {project.tags.map((tag, idx) => (
-                        <span key={idx} className={`${tag.colorClass} px-3 py-1 rounded-full text-sm`}>
+                        <span key={idx} className={`bg-blue-100 text-blue-400 px-3 py-1 rounded-full text-sm`}>
                           {tag.label}
                         </span>
                       ))}
@@ -69,7 +69,7 @@ export function Projects() {
               );
             })}
           </div>
-          <p className="text-gray-400 text-center mt-12">
+          <p className="text-center mt-12">
             More projects on my <a href="https://github.com/italotrt" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">GitHub</a>.
           </p>
       </div>

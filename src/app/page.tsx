@@ -23,11 +23,11 @@ export default function Home() {
         ctaHref="#contact"
       />
 
-      <section id="home" className="min-h-screen bg-white text-black">
+      <section id="home" className="min-h-screen">
         <Intro />
       </section>
 
-      <section id="about" className="bg-black text-white">
+      <section id="about">
         <AboutMe />
       </section>
 
@@ -35,7 +35,7 @@ export default function Home() {
         <Experience />
       </section>
 
-      <section id="projects" className="bg-black text-white">
+      <section id="projects">
         <Projects />
       </section>
 
