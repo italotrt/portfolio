@@ -9,10 +9,10 @@ export function Contact() {
               I'd love to hear from you.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-{#111} px-8 py-3 rounded-lg hover:bg-white hover:text-black hover:cursor-pointer transition-colors" onClick={() => window.open('https://www.linkedin.com/in/italo-da-silva/', '_blank')}>
+              <Button className="text-white bg-{#111} px-8 py-3 rounded-lg hover:bg-white hover:text-black hover:cursor-pointer transition-colors" onClick={() => window.open('https://www.linkedin.com/in/italo-da-silva/', '_blank')}>
                 LinkedIn
               </Button>
-              <Button className="bg-{#111} px-8 py-3 rounded-lg hover:bg-white hover:text-black hover:cursor-pointer transition-colors" onClick={() => window.open('https://github.com/italotrt', '_blank')}>
+              <Button className="text-white bg-{#111} px-8 py-3 rounded-lg hover:bg-white hover:text-black hover:cursor-pointer transition-colors" onClick={() => window.open('https://github.com/italotrt', '_blank')}>
                 Github
               </Button>
             </div>

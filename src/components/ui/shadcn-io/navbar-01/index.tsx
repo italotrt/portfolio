@@ -173,7 +173,7 @@ export const Navbar01 = React.forwardRef<HTMLElement, Navbar01Props>(
                             }
                           }}
                           className={cn(
-                            "flex w-full items-center rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground cursor-pointer no-underline",
+                            "flex w-full items-center rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-white hover:text-accent-foreground cursor-pointer no-underline",
                             link.active 
                               ? "bg-accent text-accent-foreground" 
                               : "text-white"
@@ -221,7 +221,7 @@ export const Navbar01 = React.forwardRef<HTMLElement, Navbar01Props>(
                           }
                         }}
                         className={cn(
-                          "group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 cursor-pointer no-underline",
+                          "group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-white hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 cursor-pointer no-underline",
                           link.active 
                             ? "bg-accent text-accent-foreground" 
                             : "text-white hover:text-black"
@@ -238,7 +238,7 @@ export const Navbar01 = React.forwardRef<HTMLElement, Navbar01Props>(
           <div className="flex items-center gap-3">
             <Button
               size="sm"
-              className="bg-{#111} inline-flex h-9 rounded-lg hover:bg-white hover:text-black hover:cursor-pointer transition-colors"
+              className="bg-{#111} text-white inline-flex h-9 rounded-lg hover:bg-white hover:text-black hover:cursor-pointer transition-colors"
               onClick={(e) => {
                 e.preventDefault();
                 if (onCtaClick) {
