@@ -16,6 +16,7 @@ export function Intro() {
                 alt="Profile Picture"
                 width={400}
                 height={400}
+                loading="eager"
                 className="rounded-full shadow-lg w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover order-1 md:order-2"
             />
         </div>

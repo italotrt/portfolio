@@ -43,7 +43,7 @@ export default function Home() {
         <Contact />
       </section>
 
-      {/* <section id="skills" className="bg-white text-black">
+      {/* <section id="skills">
         <div className="container mx-auto px-4 py-16">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-6xl font-bold mb-16">Skills</h2>
@@ -53,7 +53,7 @@ export default function Home() {
                 <div className="space-y-4">
                   <div className="flex justify-between items-center">
                     <span>React/Next.js</span>
-                    <span className="text-gray-600">90%</span>
+                    <span className="text-gray-400">90%</span>
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2">
                     <div className="bg-blue-600 h-2 rounded-full" style={{width: '90%'}}></div>
@@ -65,7 +65,7 @@ export default function Home() {
                 <div className="space-y-4">
                   <div className="flex justify-between items-center">
                     <span>Node.js</span>
-                    <span className="text-gray-600">85%</span>
+                    <span className="text-gray-400">85%</span>
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2">
                     <div className="bg-purple-600 h-2 rounded-full" style={{width: '85%'}}></div>

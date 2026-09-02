@@ -2,6 +2,7 @@
 import * as React from 'react';
 import { Button } from '@/components/ui/button';
 import { useEffect, useState, useRef } from 'react';
+import { useRouter } from 'next/navigation';
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -108,6 +109,7 @@ export const Navbar01 = React.forwardRef<HTMLElement, Navbar01Props>(
   ) => {
     const [isMobile, setIsMobile] = useState(false);
     const containerRef = useRef<HTMLElement>(null);
+    const router = useRouter();
     useEffect(() => {
       const checkWidth = () => {
         if (containerRef.current) {
@@ -170,7 +172,15 @@ export const Navbar01 = React.forwardRef<HTMLElement, Navbar01Props>(
                               if (element) {
                                 element.scrollIntoView({ behavior: 'smooth' });
                               }
+                              return;
                             }
+
+                            if (link.href.startsWith('/')) {
+                              router.push(link.href);
+                              return;
+                            }
+
+                            window.location.href = link.href;
                           }}
                           className={cn(
                             "flex w-full items-center rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-white hover:text-accent-foreground cursor-pointer no-underline",
@@ -218,7 +228,15 @@ export const Navbar01 = React.forwardRef<HTMLElement, Navbar01Props>(
                             if (element) {
                               element.scrollIntoView({ behavior: 'smooth' });
                             }
+                            return;
                           }
+
+                          if (link.href.startsWith('/')) {
+                            router.push(link.href);
+                            return;
+                          }
+
+                          window.location.href = link.href;
                         }}
                         className={cn(
                           "group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors hover:bg-white hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 cursor-pointer no-underline",
@@ -243,11 +261,24 @@ export const Navbar01 = React.forwardRef<HTMLElement, Navbar01Props>(
                 e.preventDefault();
                 if (onCtaClick) {
                   onCtaClick();
-                } else if (ctaHref?.startsWith('#')) {
+                  return;
+                }
+
+                if (ctaHref?.startsWith('#')) {
                   const element = document.getElementById(ctaHref.slice(1));
                   if (element) {
                     element.scrollIntoView({ behavior: 'smooth' });
                   }
+                  return;
+                }
+
+                if (ctaHref?.startsWith('/')) {
+                  router.push(ctaHref);
+                  return;
+                }
+
+                if (ctaHref) {
+                  window.location.href = ctaHref;
                 }
               }}
             >

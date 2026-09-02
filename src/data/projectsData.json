@@ -2,103 +2,24 @@
   {
     "title": "Hacker News Reimagined",
     "subtitle": "Side Project",
-    "content": "Description for Hacker News Reimagined project.",
-    "links": [
-      {
-        "label": "GitHub Repository",
-        "href": "https://github.com/italotrt/news-activities-for-hackers"
-      },
-      {
-        "label": "Live Demo",
-        "href": "https://italotrt.github.io/news-activities-for-hackers/"
-      }
-    ],
-    "bodyType": "list",
-    "bullets": [
-      "Re-designed the Hacker News interface into a modern, responsive web application using React, TypeScript, and Vite.",
-      "Optimized data orchestration with TanStack Query, implementing advanced caching strategies and background refetching for a seamless, always-fresh user experience.",
-      "Streamlined development workflow by architecting a CI/CD pipeline via GitHub Actions, automating deployments to GitHub Pages on every push."
-    ],
-    "tags": [
-      { "label": "React", "colorClass": "bg-blue-100 text-blue-800" },
-      { "label": "TypeScript", "colorClass": "bg-green-100 text-green-800" },
-      { "label": "Vite", "colorClass": "bg-orange-100 text-orange-800" },
-      { "label": "Jest", "colorClass": "bg-purple-100 text-purple-800" },
-      { "label": "TanStack Query", "colorClass": "bg-yellow-100 text-yellow-800" }
-    ]
+    "href": "/projects/hacker_news_reimagined"
   },
 
   {
     "title": "Skill-Swap: Admin Panel",
     "subtitle": "Software Design & Architecture (University Project)",
-    "content": "Description for Skill-Swap Admin Panel project.",
-    "links": [
-      {
-        "label": "GitHub Repository",
-        "href": "https://github.com/italotrt/CS4227-Software-Design-and-Architecture"
-      },
-      {
-        "label": "Live Demo",
-        "href": "https://italotrt.github.io/CS4227-Software-Design-and-Architecture/"
-      }
-    ],
-    "bodyType": "list",
-    "bullets": [
-      "Architected a robust N-Tier system (Presentation, Business, Data layers) for an enterprise-grade Admin Panel, prioritizing separation of concerns and horizontal scalability.",
-      "Improved code integrity by integrating SonarQube for automated static analysis and test coverage tracking, significantly reducing technical debt and identifying bugs.",
-      "Formalized system design through comprehensive UML documentation (Component, Deployment, and Sequence diagrams), providing a technical roadmap for interoperability and data security protocols."
-    ],
-    "tags": [
-      { "label": "React", "colorClass": "bg-blue-100 text-blue-800" },
-      { "label": "GitHub Pages", "colorClass": "bg-green-100 text-green-800" },
-      { "label": "N-Tier Layered Architecture Design", "colorClass": "bg-orange-100 text-orange-800" }
-    ]
+    "href": "/projects/skill-swap"
   },
 
   {
     "title": "Library Management System Testing",
     "subtitle": "Software Inspection and Testing Project (University Project)",
-    "content": "Description for Testing Library Management System project.",
-    "links": [
-      {
-        "label": "GitHub Repository",
-        "href": "https://github.com/italotrt/CS4004-Software-Inspection-and-Testing-Project"
-      }
-    ],
-    "bodyType": "list",
-    "bullets": [
-      "Practiced Test-Driven Development (TDD): Engineered high-reliability software using JUnit, ensuring 100% of new features met strict acceptance criteria prior to integration.",
-      "Leveraged Jira to track bugs and enhancements, mapping them directly to user stories to refine requirements and reduce post-release defects.",
-      "Collaborated with a team of four in a GitHub environment, performing peer code reviews and managing branch merges to ensure seamless integration."
-    ],
-    "tags": [
-      { "label": "Java", "colorClass": "bg-blue-100 text-blue-800" },
-      { "label": "JUnit", "colorClass": "bg-green-100 text-green-800" },
-      { "label": "Test-Driven Development", "colorClass": "bg-orange-100 text-orange-800" },
-      { "label": "Bug Reporting using Jira", "colorClass": "bg-red-100 text-red-800" }
-    ]
+    "href": "/projects/library_system_testing"
   },
 
   {
     "title": "Rogue Adventures",
     "subtitle": "Extracurricular Online Course Project - Techers, Brazil",
-    "content": "Description for Rogue Adventures project.",
-    "links": [
-      {
-        "label": "GitHub Repository",
-        "href": "https://github.com/italotrt/RogueAdventures"
-      }
-    ],
-    "bodyType": "list",
-    "bullets": [
-      "Developed a 2D platformer game inspired by the atmospheric world-building and tight controls of Hollow Knight.",
-      "Iterated on level design to balance challenge and reward, integrating enemy encounters and collectible placement to guide the player's journey.",
-      "Scripted custom animations and sound triggers to enhance player feedback, ensuring a responsive and engaging user experience from start to finish."
-    ],
-    "tags": [
-      { "label": "GameMaker Studio", "colorClass": "bg-blue-100 text-blue-800" },
-      { "label": "2D Platformer", "colorClass": "bg-green-100 text-green-800" },
-      { "label": "Level Design", "colorClass": "bg-orange-100 text-orange-800" }
-    ]
+    "href": "/projects/rogue_adventures"
   }
 ]

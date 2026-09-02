@@ -38,9 +38,10 @@ export function Experience() {
                             <Image
                                 src="/wp-engine-logo.png"
                                 alt="WP Engine Logo"
-                                width={100}
-                                height={40}
-                                className="inline-block ml-4"
+                                width={200}
+                                height={200}
+                                loading="eager"
+                                className="inline-block ml-4 max-w-[100px] max-h-[100px]"
                             />
                         </a>
                     </div>
