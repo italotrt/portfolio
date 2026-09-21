@@ -13,9 +13,9 @@ export function AboutMe() {
             </h2>
             <div className="grid md:grid-cols-2 gap-32 items-center">
                 <div className="space-y-6 text-lg">
-                    <p>
+                    {/* <p>
                         <span className="text-purple-400 font-semibold">Second Class Honours</span> graduate from Computer Games Development at the University of Limerick, with internship experience.
-                    </p>
+                    </p> */}
                     <p>
                         Collegues and mentors would described me as an individual who is <span className="text-purple-400 font-semibold">self-motivated, hardworking and dedicated</span>. A team player capable of working independently when necessary.
                     </p>
