@@ -15,6 +15,7 @@ const portfolioNavLinks = [
   { href: '/#about', label: 'About' },
   { href: '/#experience', label: 'Experience' },
   { href: '/#projects', label: 'Projects' },
+  { href: '/#education', label: 'Education' },
 ];
 
 const buttonStyle="text-white bg-{#111} border border-gray-700 px-8 py-3 rounded-lg hover:bg-white hover:text-black hover:cursor-pointer transition-colors w-full md:w-auto";

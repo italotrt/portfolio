@@ -11,6 +11,7 @@ const portfolioNavLinks = [
   { href: '/#about', label: 'About' },
   { href: '/#experience', label: 'Experience' },
   { href: '/#projects', label: 'Projects' },
+  { href: '/#education', label: 'Education' },
 ];
 
 export default function projectRogueAdventures() {
@@ -29,7 +30,7 @@ export default function projectRogueAdventures() {
             </h2>
 
             <p className="text-center text-lg text-gray-300 mb-16">
-              Game Developer • 2022
+              Game Development • 2022
             </p>
         </div>
       </div>

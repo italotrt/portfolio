@@ -1,18 +1,10 @@
 import { 
     Card,
-    CardContent,
     CardDescription,
     CardHeader,
     CardTitle,
 } from "@/components/ui/card";
-import CardActionArea from '@mui/material/CardActionArea';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import { Button } from "@/components/ui/button";
-import projectsData from "@/data/projectsData.json";
-import CardMedia from "@mui/material/CardMedia";
 import Image from "next/image";
-import Box from "@mui/material/Box";
 
 export function Education() {
   return (
@@ -26,12 +18,12 @@ export function Education() {
                     <CardHeader className="flex flex-col md:flex-row md:items-center md:justify-between">
                         <div>
                           <CardTitle className="font-bold mb-2">
-                            MSc in Software Design with Cloud Native Computing
+                            MSc Software Design with Cloud Native Computing
                           </CardTitle>
                           <CardDescription className="flex flex-col gap-1 text-white">
                             <span>Technological University of Shannon (TUS)</span>
                             <span>Athlone, Ireland (Online)</span>
-                            <span>Sept 2026 - In Progress</span>
+                            <span>In Progress</span>
                           </CardDescription>
                         </div>
                         <div className="mt-4 md:mt-0">
@@ -59,7 +51,6 @@ export function Education() {
                                 <span>Second Class Honours (2.2)</span>
                                 <span>University of Limerick (UL)</span>
                                 <span>Limerick, Ireland</span>
-                                <span>Sept 2021 - Aug 2025</span>
                             </CardDescription>
                         </div>
                         <div className="mt-4 md:mt-0">

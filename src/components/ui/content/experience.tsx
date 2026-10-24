@@ -27,8 +27,7 @@ export function Experience() {
                             <span>Jan 2024 - Aug 2024</span>
                             <span className="hidden md:inline">•</span>
                             <span>Limerick, Ireland</span>
-                        </CardDescription>.
-                        
+                        </CardDescription>
                     </div>
                     <div className="mt-4 md:mt-0">
                         <span className="inline-block px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-medium">

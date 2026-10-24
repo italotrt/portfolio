@@ -15,7 +15,7 @@ export function Projects() {
     <div className="container mx-auto px-4 py-16">
       <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-            My Projects
+            Projects
           </h2>
           <div className="flex flex-wrap gap-8 ">
             {projectsData.map((project, index) => {
