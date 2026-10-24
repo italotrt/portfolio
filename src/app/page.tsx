@@ -41,9 +41,9 @@ export default function Home() {
         <Projects />
       </section>
 
-      {/* <section id="education">
+      <section id="education">
         <Education />
-      </section> */}
+      </section>
 
       <section id="contact">
         <Contact />
