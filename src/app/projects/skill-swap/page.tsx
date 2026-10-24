@@ -66,7 +66,7 @@ export default function projectSkillSwap() {
                 </p>
             </div>
             
-            <Card className="bg-gray-800 rounded-lg p-6 border border-gray-700 text-white">
+            <Card className="rounded-lg p-6 border text-white" style={{ backgroundColor: '#292929', borderColor: '#444' }}>
               <CardTitle className="text-xl font-semibold text-purple-400">
               TechStack & Tools
               </CardTitle>
@@ -105,7 +105,7 @@ export default function projectSkillSwap() {
             <ol className="flex flex-col items-stretch gap-3 text-left md:flex-row md:items-stretch md:gap-0">
               {['Requirements', 'Design', 'Prototype', 'Evaluation', 'Documentation'].map((step, index) => (
                 <li key={step} className="flex flex-1 items-center md:items-stretch">
-                  <div className="flex w-full items-center gap-3 rounded-lg border border-gray-700 bg-gray-800 px-4 py-3 md:flex-col md:justify-center md:gap-2 md:px-3 md:py-4">
+                  <div className="flex w-full items-center gap-3 rounded-lg border px-4 py-3 md:flex-col md:justify-center md:gap-2 md:px-3 md:py-4" style={{ backgroundColor: '#292929', borderColor: '#444' }}>
                     <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-purple-400 font-bold text-gray-900">
                       {index + 1}
                     </span>
@@ -135,7 +135,7 @@ export default function projectSkillSwap() {
                 </p>
             </div>
             
-            <Card className="bg-gray-800 rounded-lg p-6 border border-gray-700 text-white">
+            <Card className="rounded-lg p-6 border text-white" style={{ backgroundColor: '#292929', borderColor: '#444' }}>
               <CardTitle className="text-xl font-semibold text-purple-400">
                  The key features/functionalities include:
               </CardTitle>

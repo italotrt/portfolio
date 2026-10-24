@@ -1,25 +1,25 @@
 [
   {
     "title": "Hacker News Reimagined",
-    "subtitle": "Side Project",
+    "subtitle": "Front-End • Side Project",
     "href": "/projects/hacker_news_reimagined"
   },
 
   {
     "title": "Skill-Swap: Admin Panel",
-    "subtitle": "Software Design & Architecture (University Project)",
+    "subtitle": "Software Design & Architecture • University Project",
     "href": "/projects/skill-swap"
   },
 
   {
     "title": "Library Management System Testing",
-    "subtitle": "Software Inspection and Testing Project (University Project)",
+    "subtitle": "Software Inspection and Testing Project • University Project",
     "href": "/projects/library_system_testing"
   },
 
   {
     "title": "Rogue Adventures",
-    "subtitle": "Extracurricular Online Course Project - Techers, Brazil",
+    "subtitle": "Game Development • Extracurricular Online Course Project • Techers, Brazil",
     "href": "/projects/rogue_adventures"
   }
 ]

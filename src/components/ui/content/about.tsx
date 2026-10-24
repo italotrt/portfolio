@@ -25,7 +25,7 @@ export function AboutMe() {
                 </div>
                 
                 <div className="space-y-6">
-                    <Card className="bg-gray-800 rounded-lg p-6 border border-gray-700 text-white">
+                    <Card className="rounded-lg p-6 border text-white" style={{ backgroundColor: '#292929', borderColor: '#444' }}>
                         <CardTitle className="text-xl font-semibold text-purple-400">
                         Personal Interests
                         </CardTitle>

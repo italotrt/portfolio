@@ -15,19 +15,20 @@ export function Experience() {
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
                 Experience
             </h2>
-            <Card className="bg-gray-800 rounded-lg p-8 border border-gray-700 text-white">
+            <Card className="rounded-lg p-8 border text-white" style={{ backgroundColor: '#292929', borderColor: '#444' }}>
                 <CardHeader className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
                     <div>
                         <CardTitle className="text-2xl font-bold mb-2">
                             Software Engineer Intern
                         </CardTitle>
                         <CardDescription className="flex flex-col md:flex-row md:items-center gap-2 text-white">
-                            <span className="text-blue-400 font-semibold">WP Engine</span>
+                            <span className="text-blue-400 font-semibold hover:text-blue-300"><a href="https://www.wpengine.com/" target="_blank" rel="noopener noreferrer">WP Engine</a></span>
                             <span className="hidden md:inline">•</span>
                             <span>Jan 2024 - Aug 2024</span>
                             <span className="hidden md:inline">•</span>
                             <span>Limerick, Ireland</span>
-                        </CardDescription>
+                        </CardDescription>.
+                        
                     </div>
                     <div className="mt-4 md:mt-0">
                         <span className="inline-block px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-medium">
@@ -71,7 +72,7 @@ export function Experience() {
                     </ul>
                 </CardContent>
                 
-                <CardFooter className="mt-2 pt-6 border-t border-gray-700">
+                <CardFooter className="mt-2 pt-6 border-t" style={{ borderColor: '#444' }}>
                     <div className="flex flex-wrap gap-2">
                     {[
                         { name: 'React'},

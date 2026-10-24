@@ -21,13 +21,13 @@ export function Projects() {
             {projectsData.map((project, index) => {
               return (
                 <CardActionArea key={index} href={`${project.href}`}>
-                  <Card key={index} className="bg-gray-800 rounded-xl p-6 border-gray-700 border-t-2">
+                  <Card key={index} className="rounded-xl p-6 border-t-2" style={{ backgroundColor: '#292929', borderColor: '#444' }}>
                     <CardHeader className="flex flex-col md:flex-row md:items-center md:justify-between">
                         <div>
                           <CardTitle className="font-bold mb-2">
                             {project.title}
                           </CardTitle>
-                          <CardDescription>
+                          <CardDescription className="text-white">
                             {project.subtitle}
                           </CardDescription>
                         </div>

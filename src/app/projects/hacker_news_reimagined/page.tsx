@@ -35,7 +35,7 @@ export default function projectHacker() {
             </h2>
 
             <p className="text-center text-lg text-gray-300 mb-16">
-                Front-end Role • 2026 
+                Front-end Focused • 2026 
             </p>
 
             <Image
@@ -87,7 +87,7 @@ export default function projectHacker() {
                     </ul>
               </div>
               
-              <Card className="bg-gray-800 rounded-lg p-6 border border-gray-700 text-white">
+              <Card className="rounded-lg p-6 border text-white" style={{ backgroundColor: '#292929', borderColor: '#444' }}>
                   <CardTitle className="text-xl font-semibold text-purple-400">
                   TechStack & Tools
                   </CardTitle>
